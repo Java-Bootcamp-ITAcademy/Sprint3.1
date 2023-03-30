@@ -9,7 +9,7 @@ public class Contact {
     private static List<Contact> contactList=new ArrayList<>();
 
     {
-        contactList.add(this);
+        contactList.add(this); // Adding contact to list once is instantiated through instance initializing block
     }
 
     public Contact(Address address, PhoneNumber phoneNumber) {
