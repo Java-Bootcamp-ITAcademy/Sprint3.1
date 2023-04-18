@@ -10,7 +10,11 @@ import java.util.List;
 public class Contact {
     private Address address;
     private PhoneNumber phoneNumber;
-    private static List<Contact> contactList=new ArrayList<>();
+    private static List<Contact> contactList;
+
+    static {
+        contactList=new ArrayList<>();
+    }
 
     {
         contactList.add(this); // Adding contact to list once is instantiated through instance initializing block
